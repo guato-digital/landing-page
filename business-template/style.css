@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 /*===========================
-  COMMON css 
+  COMMON css
 ===========================*/
 :root {
   --font-family: "Inter", sans-serif;
@@ -36,7 +36,11 @@
   --light-1: #969696eb;
   --light-2: #969696eb;
   --light-3: #969696eb;
-  --white: #d8d4d4eb;
+  --white: #fff;
+  --white-serv: #fff;
+  --light-section: #dbedff;
+  --dark-section: var(--primary);
+  --white-serv-icon: #fff;
   --gradient-1: linear-gradient(180deg, #155bd5 0%, #1c3ab6 100%);
   --gradient-2: linear-gradient(180deg, #155bd5 13.02%, #00d4d7 85.42%);
   --gradient-3: linear-gradient(180deg, #155bd5 0%, #8f15d5 100%);
@@ -348,8 +352,8 @@ p {
   font-weight: 600;
   display: inline-block;
   margin-bottom: 15px;
-  color: var(--primary);
-  border: 2px solid var(--primary);
+  color: var(--white);
+  border: 2px solid var(--white);
   border-radius: 30px;
   padding: 8px 30px;
 }
@@ -387,7 +391,7 @@ p {
 
 
 /*===========================
-  NAVBAR css 
+  NAVBAR css
 ===========================*/
 .navbar-toggler:focus {
   box-shadow: none;
@@ -1002,7 +1006,7 @@ p {
   about-05 css
 ===========================*/
 .about-five {
-  background-color: var(--light-3);
+  background-color: var(--white);
   padding-top: 120px;
   padding-bottom: 90px;
 }
@@ -1053,7 +1057,7 @@ p {
 }
 .about-five-content .about-five-tab nav {
   border: none;
-  background-color: var(--light-1);
+  background-color: var(--gray-4);
   padding: 15px;
   border-radius: 5px;
 }
@@ -1149,10 +1153,11 @@ p {
 
 
 /*===========================
-  services css 
+  services css
 ===========================*/
 .services-eight {
   padding: 100px 0;
+  background-color: var(--dark-section);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .services-eight {
@@ -1166,7 +1171,7 @@ p {
 }
 .services-eight .single-services {
   padding: 40px 30px;
-  border: 1px solid var(--light-1);
+  border: 1px solid var(--gray-4);
   border-radius: 10px;
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -1174,12 +1179,13 @@ p {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+  background-color: var(--white-serv);
 }
 .services-eight .single-services:hover {
   box-shadow: var(--shadow-4);
 }
 .services-eight .single-services:hover .service-icon {
-  color: var(--white);
+  color: var(--white-serv-icon);
   border-color: transparent;
   background: var(--primary);
 }
@@ -1192,7 +1198,7 @@ p {
   height: 78px;
   border-radius: 50%;
   margin-bottom: 25px;
-  background: var(--white);
+  background: var(--white-serv-icon);
   border: 2px solid var(--primary);
   display: flex;
   align-items: center;
@@ -1624,6 +1630,8 @@ p {
   position: relative;
   z-index: 3;
   padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: var(--dark-section);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-section {
