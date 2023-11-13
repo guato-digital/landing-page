@@ -1621,18 +1621,21 @@ p {
 	Contact CSS
 ========================================*/
 .contact-section {
-  position: relative;
-  z-index: 3;
-  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-section {
+    display: flex;
     padding-top: 80px;
   }
 }
 @media (max-width: 767px) {
   .contact-section {
     padding-top: 60px;
+    display: flex;
+
   }
 }
 .contact-section .contact-item-wrapper .contact-item {
@@ -1640,8 +1643,9 @@ p {
   border: 1px solid var(--gray-4);
   border-radius: 10px;
   background: var(--white);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 20px 30px;
+  flex-direction: column;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
