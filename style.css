@@ -124,6 +124,7 @@ h3,
 .h3 {
   font-size: 1.75em;
   line-height: 1.25;
+  color: rgba(255, 255, 255, 0.517);
 }
 
 h4,
@@ -911,7 +912,17 @@ p {
 .header-eight {
   position: relative;
   padding:160px 0 100px 0;
-  background: var(--primary);
+  width: 100%;
+  background-image:url(./assets/images/bg-header.png);
+}
+.whatsapp-head-button{
+  font-family: Arial, sans-serif;
+  background-color: #5C677D; /* Azul Claro */
+  color: white;
+  border-radius: 1em;
+  text-align: center;
+  padding: 10px;
+
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight {
@@ -1585,7 +1596,7 @@ p {
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
   border: 1px solid #eee;
-}
+}tact
 .brand-area .clients-logos .single-image:hover {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.096);
   -webkit-transform: translateY(-5px);
@@ -1622,7 +1633,7 @@ p {
 ========================================*/
 .contact-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-top: 40px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1645,7 +1656,7 @@ p {
   background: var(--white);
   margin-bottom: 20px;
   padding: 20px 30px;
-  flex-direction: column;
+  flex-direction: row;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -1667,7 +1678,11 @@ p {
 }
 @media (max-width: 767px) {
   .contact-section .contact-item-wrapper .contact-item {
-    flex-direction: column;
+    flex-direction: row;
+    
+  }
+  .contact-icon{
+    margin: 1em;
   }
 }
 .contact-section .contact-item-wrapper .contact-item .contact-icon {
@@ -1908,4 +1923,29 @@ p {
 .footer-eleven .newsletter-form .sub-btn:hover {
   color: var(--white);
   background-color: var(--primary-dark);
+}
+/* Google Section Reviews */
+.testimonials {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background-color: #fff; /* Fundo branco para destacar os depoimentos */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.testimonial p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.author {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #555; /* Cor de texto mais clara */
 }
